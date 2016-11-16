@@ -14,16 +14,52 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area col-xs-6">
-		<main id="main" class="site-main" role="main">
-
-		<img src="https://static.pexels.com/photos/4164/landscape-mountains-nature-mountain.jpeg"/>
-			<img src="https://static.pexels.com/photos/4164/landscape-mountains-nature-mountain.jpeg"/>
-				<img src="https://static.pexels.com/photos/4164/landscape-mountains-nature-mountain.jpeg"/>
-					<img src="https://static.pexels.com/photos/4164/landscape-mountains-nature-mountain.jpeg"/>
-						<img src="https://static.pexels.com/photos/4164/landscape-mountains-nature-mountain.jpeg"/>	<img src="https://static.pexels.com/photos/4164/landscape-mountains-nature-mountain.jpeg"/>	<img src="https://static.pexels.com/photos/4164/landscape-mountains-nature-mountain.jpeg"/>
-
-		</main><!-- #main -->
+	<div id="primary" class="content-area row">
+		<a>
+			<div class="thumbnailLink col-xs-12 col-sm-4">
+			<div class="parent " onclick="">
+				<div class="child" style="background: url(https://static.pexels.com/photos/4164/landscape-mountains-nature-mountain.jpeg); background-size: cover;">
+					<a href="#">Los Angeles</a>
+				</div>
+			</div>
+			</div>
+		<a/>
+		<a>
+			<div class="thumbnailLink col-xs-12 col-sm-4">
+			<div class="parent " onclick="">
+				<div class="child" style="background: url(https://static.pexels.com/photos/4164/landscape-mountains-nature-mountain.jpeg); background-size: cover;">
+					<a href="#">Los Angeles</a>
+				</div>
+			</div>
+			</div>
+		<a/>
+		<a>
+			<div class="thumbnailLink col-xs-12 col-sm-4">
+			<div class="parent " onclick="">
+				<div class="child" style="background: url(https://static.pexels.com/photos/4164/landscape-mountains-nature-mountain.jpeg); background-size: cover;">
+					<a href="#">Los Angeles</a>
+				</div>
+			</div>
+			</div>
+		<a/>
+		<a>
+			<div class="thumbnailLink col-xs-12 col-sm-4">
+			<div class="parent " onclick="">
+				<div class="child" style="background: url(https://static.pexels.com/photos/4164/landscape-mountains-nature-mountain.jpeg); background-size: cover;">
+					<a href="#">Los Angeles</a>
+				</div>
+			</div>
+			</div>
+		<a/>
+		<a>
+			<div class="thumbnailLink col-xs-12 col-sm-4">
+			<div class="parent " onclick="">
+				<div class="child" style="background: url(https://static.pexels.com/photos/4164/landscape-mountains-nature-mountain.jpeg); background-size: cover;">
+					<a href="#">Los Angeles</a>
+				</div>
+			</div>
+			</div>
+		<a/>
 	</div><!-- #primary -->
 
 <?php

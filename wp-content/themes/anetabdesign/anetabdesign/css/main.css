@@ -1,129 +1,60 @@
 
-/*--------------------------------------------------------------
-## SLIDER
---------------------------------------------------------------*/
-body, h1, ul {
-  margin: 0;
-  padding: 0;
-}
-li {
-  list-style: none;
-}
-.red {
-      color: #F16B6F;
-    }
-.logo {
-  position: fixed;
-  background-color: #333;
-  color: #eee;
-  left: 0;
-  top: 0;
-  z-index: 1200;
-  padding: 10px;
-  font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+#slideshow{
+	width:100%;
+	height:600px;
+	position:fixed;
 }
 
-.slider{
+#slideshowOverlay{
+	width:100%;
+	height:600px;
+	position:fixed;
+}
+
+#slideshowColorOverlay
+{
+	background:black;
+	width:100%;
+	position:fixed;
 	height:600px;
 }
 
-.bg-slideshow,
-.bg-slideshow:after {
+#slideshow > div{
+	position:fixed;
+	width:100%;
+	height:600px;
+}
+
+#site{
+	background: white;
     position: absolute;
-    width: 100%;
-    height: 600px;
-    top: 0px;
-    left: 0px;
-    z-index: 0;
-}
-.bg-slideshow:after {
-    content: '';
-    background: transparent url('http://watchmaker.haz.wiki/_media/tips:stripes.png') repeat top left;
-    /*background: transparent url('http://erinsowards.com/articles/2012/07/graphics/bkg_patterns_08.gif') repeat top left;*/
-}
-.bg-slideshow li .image {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    color: transparent;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: none;
-    opacity: 0;
-    z-index: 0;
-    animation: imageAnimation 18s linear infinite 0s;
-}
-.bg-slideshow li div {
-    z-index: 1000;
-    position: absolute;
-    bottom: 30px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    opacity: 0;
-    color: #fff;
-    animation: titleAnimation 18s linear infinite 0s;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: center;
-    -ms-align-items: center;
-    align-items: center;
-}
-.bg-slideshow li div h3 {
-    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-    font-size: 240px;
-    padding: 0;
-    line-height: 200px;
-}
-.bg-slideshow li:nth-child(1) .image {
-    background-image: url('http://s2.favim.com/orig/34/beautiful-black-and-white-fashion-girl-relax-Favim.com-278194.jpg')
-}
-.bg-slideshow li:nth-child(2) .image {
-    background-image: url('https://s-media-cache-ak0.pinimg.com/736x/d4/9e/0d/d49e0d2e93f5cb76994e25656545f5cd.jpg');
-    animation-delay: 6s;
-}
-.bg-slideshow li:nth-child(3) .image {
-    background-image: url('http://cliparts.co/cliparts/dT9/rbo/dT9rboxgc.jpg');
-    animation-delay: 12s;
-}
-.bg-slideshow li:nth-child(2) div {
-    animation-delay: 6s;
-}
-.bg-slideshow li:nth-child(3) div {
-    animation-delay: 12s;
-}
-@keyframes imageAnimation {
-    0% { opacity: 0; animation-timing-function: ease-in; }
-    8% { opacity: 1; animation-timing-function: ease-out; }
-    27% { opacity: 1 }
-    45% { opacity: 0 }
-    100% { opacity: 0 }
-}
-@keyframes titleAnimation {
-  0% { opacity: 0; }
-  8% { opacity: 1; }
-  27% { opacity: 1 }
-  45% { opacity: 0 }
-  100% { opacity: 0 }
-}
-.no-cssanimations .cb-slideshow li .image{
-	opacity: 1;
-}
-@media screen and (max-width: 1140px) {
-    .bg-slideshow li div h3 { font-size: 140px }
-}
-@media screen and (max-width: 600px) {
-    .bg-slideshow li div h3 { font-size: 80px }
+    top: 600px;
+	width:100%;
 }
 
 .navbar{
 	z-index:100;
+	position: fixed;
+	width: 100%;
+    background: transparent;
+	border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #f8f8f8;
+    background-color: transparent;
+}
+
+@media (min-width: 768px)
+{
+.navbar-nav {
+    float: right;
+    margin: 0;
+}
 }
 
 .affix {
@@ -133,4 +64,107 @@ li {
   
 .affix + .container-fluid {
       padding-top: 70px;
-  }
+}
+
+.affix.navbar{
+	z-index:100;
+	position: fixed;
+	width: 100%;
+    background: black;
+	border: none;
+}
+  
+  
+
+
+.jumbotron{
+	background:transparent;
+	color:white;
+}
+
+
+.thumbnailLink
+{
+	height:500px;
+	padding-bottom:20px;
+}
+
+/* image hover steff*/
+
+/* Image zoom on hover + Overlay colour */
+.parent {
+    width: 100%;
+    margin: 20px;
+    height: 100%;
+    border: 1px solid blue;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: inline-block;
+	cursor: pointer;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+
+.thumbnailLink a {
+    display: none;
+    font-size: 35px;
+    color: #ffffff !important;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+    /*text-decoration: none;*/
+}
+
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover a, .parent:focus a {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,73,94,0.75);
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    .parent {width: 100%; margin: 20px 0px}
+		.wrapper {padding: 20px 20px;}
+}
+
+
+/*  */

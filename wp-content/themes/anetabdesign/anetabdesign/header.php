@@ -21,28 +21,26 @@
 
 <body <?php body_class(); ?>>
 
-<div class="slider">
-	<ul class="bg-slideshow">
-		<li>
-			  <span class="image">Image 01</span>
-			  <div>
-				   <h3><span class="red">re</span>·lax</h3>
-			</div>
-		</li>
-		<li>
-		<span class="image">Image 02</span>
-			  <div>
-				   <h3>and <span class="red">go</span>..</h3>
-			</div>
-	  </li>
-		<li>
-		<span class="image">Image 03</span>
-			  <div>
-				   <h3>Fuck <span class="red">you</span>rself</h3>
-			</div>
-	  </li>
-	</ul>
+<div id="slideshow">
+   <div style="background: url(https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg); background-size: cover;">
+   </div>
+   <div style="background: url(https://wallpaperscraft.com/image/smoke_fire_bright_colorful_background_46862_1680x1050.jpg); background-size: cover;">
+   </div>
 </div>
+
+<div id="slideshowOverlay">
+	<div class="container">
+	  <div class="jumbotron">
+		<h1>Bootstrap Tutorial</h1>
+		<p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
+		responsive, mobile-first projects on the web.</p>
+	  </div>
+	  <p>This is some text.</p>
+	  <p>This is another text.</p>
+	</div>
+</div>
+
+<div id="slideshowColorOverlay"></div>
 
 <nav class="navbar navbar-default" id="mainNav" role="navigation">
 
@@ -72,5 +70,5 @@
 
 
 
-<div id="page" class="site container-fluid">
-	<div id="content" class="site-content">
+<div id="site">
+	<div id="content" class="col-xs-12">

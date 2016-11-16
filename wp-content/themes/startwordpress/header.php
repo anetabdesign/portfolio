@@ -25,15 +25,27 @@
 <body>
 <div id="wrapper" class="hfeed">
     <div id="header">
-        <div id="masthead">
- 
-            <div id="access">
-				<!--<div class="skip-link"><a href="#content" title="<?php _e( 'Skip to content', 'hbd-theme' ) ?>"><?php _e( 'Skip to content', 'hbd-theme' ) ?></a></div>-->
-				<?php #wp_page_menu( 'sort_column=menu_order' ); ?>
-				<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
-            </div><!-- #access -->
- 			
-        </div><!-- #masthead -->
+	
+	<ul class="bg-slideshow">
+ 	<li>
+		  <span class="image">Image 01</span>
+		  <div>
+			   <h3><span class="red">re</span>·lax</h3>
+  		</div>
+ 	</li>
+	<li>
+    <span class="image">Image 02</span>
+		  <div>
+			   <h3>and <span class="red">go</span>..</h3>
+  		</div>
+  </li>
+	<li>
+    <span class="image">Image 03</span>
+		  <div>
+			   <h3>Fuck <span class="red">you</span>rself</h3>
+  		</div>
+	  </li>
+	</ul>
     </div><!-- #header -->
  
     <div id="main">
