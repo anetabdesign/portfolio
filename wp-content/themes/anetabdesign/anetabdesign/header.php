@@ -30,13 +30,11 @@
 
 <div id="slideshowOverlay">
 	<div class="container">
-	  <div class="jumbotron">
+	  <div class="jumbotron col-xs-12 col-sm-7 col-md-5">
 		<h1>Bootstrap Tutorial</h1>
 		<p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
 		responsive, mobile-first projects on the web.</p>
 	  </div>
-	  <p>This is some text.</p>
-	  <p>This is another text.</p>
 	</div>
 </div>
 
@@ -55,14 +53,14 @@
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="main-navbar-collapse">
-					
-						<?php 
+
+						<?php
 							$defaults = array(
 								'container' => false,
 								'theme_location' => 'primary',
 								'menu_class' => 'nav navbar-nav'
 							);
-							
+
 							wp_nav_menu($defaults);
 						?>
 				</div>
