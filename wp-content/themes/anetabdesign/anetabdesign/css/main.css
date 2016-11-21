@@ -5,6 +5,12 @@
 	position:fixed;
 }
 
+#slideshowStatic{
+	width:100%;
+	height:600px;
+	position:fixed;
+}
+
 #slideshowOverlay{
 	width:100%;
 	height:600px;
@@ -32,6 +38,24 @@
 	width:100%;
 }
 
+.site-main {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.site-main>ul, ol {
+	margin: 0;
+}
+
+.site-main>ul{
+text-align: center;
+    padding: 0;
+	}
+
+.site-main>ul>li{
+list-style-type: none;
+}
+
 .navbar{
 	z-index:100;
 	position: fixed;
@@ -47,6 +71,11 @@
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
     color: #f8f8f8;
     background-color: transparent;
+}
+
+footer {
+	background-color: black;
+	color: white;
 }
 
 @media (min-width: 768px)
@@ -96,7 +125,6 @@
     width: 100%;
     margin: 20px;
     height: 100%;
-    border: 1px solid blue;
     overflow: hidden;
     position: relative;
     float: left;
@@ -180,6 +208,16 @@
     .parent {width: 100%; margin: 20px 0px}
 		.wrapper {padding: 20px 20px;}
 }
+
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .jumbotron,
+  .container-fluid .jumbotron {
+    padding-right: 30px!important;
+    padding-left: 30px!important;
 
 
 /*  */

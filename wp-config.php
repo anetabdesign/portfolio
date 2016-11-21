@@ -23,7 +23,7 @@
 define('DB_NAME', 'portfolio_db');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'admin');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'password');

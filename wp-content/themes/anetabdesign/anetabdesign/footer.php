@@ -13,11 +13,12 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer col-xs-12 padding-top-xs-l padding-bottom-xs-l" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'anetabdesign' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'anetabdesign' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'anetabdesign' ), 'anetabdesign', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			<div class="contact details col-xs-12 col-sm-6">tel. 07852 876401 <br/>anetabdesign@gmail.com</div>
+			<div class="social media col-xs-12 col-sm-6"></div>
+
+
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

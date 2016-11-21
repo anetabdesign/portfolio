@@ -10,15 +10,14 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main padding-bottom-xs-xl" role="main">
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		 
-			<h2><?php the_title(); ?></h2>
-			<?php the_post_thumbnail(); ?>
-			<?php the_excerpt(); ?>
-			
-			<?php 
+
+			 <h2 class="col-xs-12 col-sm-4 margin-top-xs-s"><?php the_title(); ?></h2>
+			 <div class="col-xs-12 col-sm-8 margin-bottom-xs-xl"><?php the_content(); ?></div>
+
+			<?php
 
 			$images = get_field('project_gallery');
 
@@ -26,17 +25,15 @@ get_header(); ?>
 				<ul>
 					<?php foreach( $images as $image ): ?>
 						<li>
-							<a href="<?php echo $image['url']; ?>">
-								 <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
-							</a>
+								 <img class="padding-top-xs-l padding-bottom-xs-l" src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
 							<p><?php echo $image['caption']; ?></p>
 						</li>
 					<?php endforeach; ?>
 				</ul>
 			<?php endif; ?>
-			
-			
-			
+
+
+
 		<?php endwhile; else: ?>
 			<?php _e( 'Sorry, no posts matched your criteria.', 'textdomain' ); ?>
 		<?php endif; ?>
@@ -45,5 +42,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+
 get_footer();
