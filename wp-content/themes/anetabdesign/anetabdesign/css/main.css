@@ -32,7 +32,8 @@
 }
 
 #site{
-	background: white;
+	background-image: url("/assets/debut_light_@2X.png");
+  background-repeat: repeat-x;
     position: absolute;
     top: 600px;
 	width:100%;
