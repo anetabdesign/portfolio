@@ -1,10 +1,6 @@
 <?php
 /**
- * This is template for displaying About.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package anetabdesign
+Template Name: About me
  */
 
 get_header(); ?>

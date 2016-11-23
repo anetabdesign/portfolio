@@ -11,6 +11,7 @@ Text Domain: anetabdesign
 Tags:
 
 This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others
 Use it to make something cool, have fun, and share what you've learned with others.
 
 anetabdesign is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
@@ -724,6 +725,7 @@ a:active {
 	display: table;
 	table-layout: fixed;
 }
+
 
 .clear:after,
 .entry-content:after,

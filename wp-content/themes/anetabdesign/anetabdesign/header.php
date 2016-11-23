@@ -24,15 +24,28 @@
 <?php if(is_front_page()): ?>
 
 	<div id="slideshow">
-	   <div style="background: url(https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg); background-size: cover;">
-	   </div>
-	   <div style="background: url(https://wallpaperscraft.com/image/smoke_fire_bright_colorful_background_46862_1680x1050.jpg); background-size: cover;">
-	   </div>
+
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<?php
+
+			$images = get_field('slider_gallery');
+			if( $images ): ?>
+					<?php foreach( $images as $image ): ?>
+					   <div style="background: url(<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>); background-size: cover;">
+					   </div>
+					<?php endforeach; ?>
+			<?php endif; ?>
+
+
+
+		<?php endwhile; else: ?>
+			<?php _e( 'Sorry, no posts matched your criteria.', 'textdomain' ); ?>
+		<?php endif; ?>
 	</div>
 
 <?php else: ?>
 	<div id="slideshowStatic">
-	   <div style="background: url(<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?><?php the_post_thumbnail_url(); ?><?php endwhile; else: ?><?php https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg ?><?php endif; ?>); background-size: cover;">
+	   <div style="background: url(<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?><?php the_post_thumbnail_url(); ?><?php endwhile; else: ?><?php https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg ?><?php endif; ?>); background-size: cover; background-position: center;">
 	   </div>
 	</div>
 
@@ -74,7 +87,5 @@
 				</div>
 </nav>
 
-
-
-<div id="site">
+<div id="site" style="background-image: url();">
 	<div id="content" class="col-xs-12">

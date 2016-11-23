@@ -11,6 +11,10 @@
 	position:fixed;
 }
 
+#slideshowStatic div{
+	height: 100%;
+}
+
 #slideshowOverlay{
 	width:100%;
 	height:600px;
@@ -19,10 +23,11 @@
 
 #slideshowColorOverlay
 {
-	background:black;
+	background:#2b303a;
 	width:100%;
 	position:fixed;
 	height:600px;
+	opacity:0;
 }
 
 #slideshow > div{
@@ -32,8 +37,8 @@
 }
 
 #site{
-	background-image: url("/assets/debut_light_@2X.png");
-  background-repeat: repeat-x;
+	background:#fcfcfc;
+	background-repeat: repeat-x;
     position: absolute;
     top: 600px;
 	width:100%;
@@ -66,7 +71,7 @@ list-style-type: none;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #fff;
+    color: #B33C86;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
@@ -75,8 +80,8 @@ list-style-type: none;
 }
 
 footer {
-	background-color: black;
-	color: white;
+	background-color: #2b303a;
+	color: #fd3e81;
 }
 
 @media (min-width: 768px)
@@ -100,7 +105,7 @@ footer {
 	z-index:100;
 	position: fixed;
 	width: 100%;
-    background: black;
+    background: #2b303a;
 	border: none;
 }
 
@@ -115,7 +120,7 @@ footer {
 
 .thumbnailLink
 {
-	height:500px;
+	height:320px;
 	padding-bottom:20px;
 }
 
@@ -178,6 +183,11 @@ footer {
     display: block;
 }
 
+#content {
+	max-width: 1024px;
+	float: none;
+	margin: 0 auto;
+}
 .child:before {
     content: "";
     display: none;
@@ -220,5 +230,8 @@ footer {
     padding-right: 30px!important;
     padding-left: 30px!important;
 
+.single-projects>#slideshowOverlay>.container>.jumbotron {
+	display: none;
+}
 
 /*  */
