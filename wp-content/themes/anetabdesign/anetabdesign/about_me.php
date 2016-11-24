@@ -1,5 +1,5 @@
 <?php
-/**
+/*
 Template Name: About me
  */
 
@@ -11,7 +11,16 @@ get_header(); ?>
 
 				 <h4 class="col-xs-12 col-sm-4 margin-top-xs-s"><?php the_title(); ?></h4>
 				 <div class="col-xs-12 col-sm-8 margin-bottom-xs-xl"><?php the_content(); ?></div>
+				 <div><?php
 
+							$file = get_field('file');
+
+							if( $file ): ?>
+
+								<a href="<?php echo $file['url']; ?>"><?php echo $file['filename']; ?></a>
+
+							<?php endif; ?>
+						</div>
 	</div><!-- #primary -->
 	<?php
 get_footer();
